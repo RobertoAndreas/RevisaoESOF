@@ -25,6 +25,12 @@ public class Fila {
 		return proximo;
 	}
 	
+	/*public Pessoa TesteProblema(){	
+		
+	}
+	*/
+	
+	
 	public Pessoa verificaGravida(){
 		
 		for(Pessoa p: pessoas)
@@ -45,5 +51,21 @@ public class Fila {
 		}
 		
 		return null;
+	}
+	
+	public ArrayList<Pessoa> TesteGravida(){
+		
+		for(Pessoa p: pessoas){
+			
+			if(p.isGravida() == false){
+				pessoas.add(p);
+			}
+			else if (p.isGravida() == true){
+				pessoas.add(p);
+			}
+		}
+		return pessoas;
+		
+		
 	}
 }
